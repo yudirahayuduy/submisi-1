@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+    font-family: 'quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: #216dd9;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.table-container td {
+    width: 10%;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.title {
+    background-color: #00a2c6;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.skill .content {
+    background-color: white;
+    color: #333333;
+    padding: 15px;
+}
+
+.skill ul {
+    margin: 0;
+    list-style: none;
+}
+
+.skill li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #f1f1f1;
+}
+
+.skill .level {
+    background-color: #00a2c6;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.table {
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th {
+    background-color: #00a2c6;
+    padding: 10px 15px;
+    color: white;
+}
+
+.table td {
+    padding: 10px 15px;
+    color: black;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background-color: #cccaca;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #dfdfdf;
+}
+
+.project .content {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.project img {
+    width: 50%;
+}
+
+.contactme {
+    padding: 15px 0px;
+}
+
+input[type="text"],
+textarea {
+    outline: none;
+    padding: 10px 20px;
+    background-color: #e8e8e8;
+    font-family: 'quicksand', sans-serif;
+    border: solid 3px #e8e8e8;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background-color: white;
+    border: solid 3px #0b8389;
+    transition: all 0.5s;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #0b8389;
+    border-bottom: #036a6f;
+}
+
+button[type="reset"] {
+    background-color: #d12f2f;
+    border-bottom: #af1f1f;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+h2,
+h3 {
+    color: #00a2c6;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 5px;
+    color: white;
+    background-color: #216dd9;
+    text-align: center;
+    font-weight: bold;
+}
